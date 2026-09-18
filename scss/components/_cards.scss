@@ -1,0 +1,18 @@
+// =========================================
+// COMPONENTS / CARDS
+// Style umum untuk <section> & <aside>
+// =========================================
+@use "../abstracts" as *;
+
+section,
+aside {
+  background: $color-white;
+  margin-bottom: $spacing-lg;
+  padding: 35px;
+  border-radius: $radius-md;
+  @include hover-shadow(0 5px 20px $color-shadow, 0 8px 25px $color-shadow-hover);
+
+  @include respond-to(mobile) {
+    padding: 25px $spacing-md;
+  }
+}

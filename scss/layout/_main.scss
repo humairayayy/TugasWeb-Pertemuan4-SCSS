@@ -1,0 +1,14 @@
+// =========================================
+// LAYOUT / MAIN
+// =========================================
+@use "../abstracts" as *;
+
+main {
+  max-width: 950px;
+  margin: auto;
+  padding: $spacing-xl $spacing-md;
+
+  @include respond-to(mobile) {
+    padding: 25px 12px;
+  }
+}

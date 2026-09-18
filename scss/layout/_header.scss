@@ -1,0 +1,29 @@
+// =========================================
+// LAYOUT / HEADER
+// =========================================
+@use "../abstracts" as *;
+
+header {
+  text-align: center;
+  padding: $spacing-xxl $spacing-md;
+  background: linear-gradient(135deg, $color-border-light, $color-bg-light);
+
+  h1 {
+    font-size: $font-size-h1;
+    color: $color-primary-dark;
+    margin-bottom: 8px;
+
+    @include respond-to(mobile) {
+      font-size: $font-size-h1-mobile;
+    }
+  }
+
+  p {
+    font-size: $font-size-p;
+    color: $color-secondary;
+  }
+
+  @include respond-to(mobile) {
+    padding: 60px 15px;
+  }
+}

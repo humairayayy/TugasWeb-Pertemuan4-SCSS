@@ -1,0 +1,4 @@
+// Forward semua partial di folder abstracts
+// supaya cukup panggil @use "abstracts" as * di tempat lain.
+@forward "variables";
+@forward "mixins";

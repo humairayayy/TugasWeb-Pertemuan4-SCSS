@@ -1,0 +1,21 @@
+// =========================================
+// COMPONENTS / BUTTONS
+// =========================================
+@use "../abstracts" as *;
+
+button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: $radius-sm;
+  background: $color-primary;
+  color: $color-white;
+  font-size: $font-size-base;
+  font-weight: bold;
+  cursor: pointer;
+  @include transition();
+
+  &:hover {
+    background: $color-primary-darker;
+    transform: translateY(-2px);
+  }
+}

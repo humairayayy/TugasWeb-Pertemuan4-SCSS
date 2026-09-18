@@ -1,0 +1,32 @@
+// =========================================
+// BASE / TYPOGRAPHY
+// =========================================
+@use "../abstracts" as *;
+
+body {
+  font-family: $font-main;
+  line-height: 1.6;
+  background: $color-bg;
+  color: $color-text;
+}
+
+h2 {
+  color: $color-primary-dark;
+  font-size: $font-size-h2;
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-sm;
+  border-bottom: 2px solid $color-border-light;
+
+  @include respond-to(mobile) {
+    font-size: $font-size-h2-mobile;
+  }
+}
+
+h3 {
+  color: $color-h3;
+  margin-bottom: $spacing-sm;
+}
+
+p {
+  margin-bottom: 12px;
+}

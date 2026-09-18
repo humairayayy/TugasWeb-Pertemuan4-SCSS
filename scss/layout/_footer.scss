@@ -1,0 +1,15 @@
+// =========================================
+// LAYOUT / FOOTER
+// =========================================
+@use "../abstracts" as *;
+
+footer {
+  text-align: center;
+  padding: $spacing-lg $spacing-md;
+  background: $color-primary-dark;
+  color: $color-white;
+
+  p {
+    margin: 0;
+  }
+}

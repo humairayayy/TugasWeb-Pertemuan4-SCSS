@@ -1,0 +1,40 @@
+// =========================================
+// COMPONENTS / ABOUT & FIGURE
+// =========================================
+@use "../abstracts" as *;
+
+#about {
+  text-align: center;
+
+  article {
+    text-align: left;
+  }
+}
+
+figure {
+  margin: 25px 0;
+  text-align: center;
+
+  img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: $radius-circle;
+    border: 6px solid $color-border-light;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Dipisah dari nesting figure > img agar tetap rapi (max 3 level)
+@include respond-to(mobile) {
+  figure img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+figcaption {
+  margin-top: $spacing-sm;
+  color: $color-caption;
+  font-size: 14px;
+}

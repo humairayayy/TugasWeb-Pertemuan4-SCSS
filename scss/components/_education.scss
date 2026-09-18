@@ -1,0 +1,12 @@
+// =========================================
+// COMPONENTS / EDUCATION
+// =========================================
+@use "../abstracts" as *;
+
+#education {
+  article {
+    padding: 15px;
+    border-left: 4px solid $color-edu-border;
+    background: $color-edu-bg;
+  }
+}

@@ -1,0 +1,23 @@
+// =========================================
+// COMPONENTS / HOBI
+// =========================================
+@use "../abstracts" as *;
+
+#hobi {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background: $color-hobi-bg;
+    border-radius: $radius-sm;
+    @include transition(background);
+
+    &:hover {
+      background: $color-hobi-hover;
+    }
+  }
+}

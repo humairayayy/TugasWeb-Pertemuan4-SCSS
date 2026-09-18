@@ -1,0 +1,15 @@
+// =========================================
+// COMPONENTS / SKILLS
+// =========================================
+@use "../abstracts" as *;
+
+#skills {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    @include pill-badge($color-skill-bg, $color-skill-text);
+  }
+}

@@ -1,0 +1,41 @@
+// =========================================
+// LAYOUT / NAV
+// =========================================
+@use "../abstracts" as *;
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+  padding: 18px $spacing-sm;
+  background: $color-white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  a {
+    display: inline-block;
+    color: $color-nav-text;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+    padding: 7px $spacing-xs;
+    @include transition();
+
+    &:hover {
+      color: $color-nav-hover;
+      transform: translateY(-2px);
+    }
+  }
+
+  @include respond-to(mobile) {
+    padding: 12px $spacing-xs;
+  }
+}
+
+// Aturan mobile untuk nav a dipisah agar nesting tidak > 3 level
+@include respond-to(mobile) {
+  nav a {
+    margin: 3px $spacing-xs;
+    font-size: 14px;
+  }
+}

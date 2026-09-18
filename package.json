@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-scss",
+  "version": "1.0.0",
+  "description": "Konversi CSS ke SCSS (7-1 pattern) - Tugas Rutin 4",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "sass:build": "sass scss/main.scss:dist/style.css --no-source-map",
+    "sass:watch": "sass --watch scss/main.scss:dist/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "vite": "^5.4.0"
+  }
+}

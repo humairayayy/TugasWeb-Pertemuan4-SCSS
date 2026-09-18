@@ -1,0 +1,12 @@
+// =========================================
+// MAIN.SCSS
+// Entry point — menggabungkan semua layer 7-1 pattern.
+// Pakai @use (bukan @import) sesuai ketentuan tugas.
+// =========================================
+
+@use "vendors";
+@use "base";
+@use "layout";
+@use "components";
+@use "pages";
+@use "themes";

@@ -1,0 +1,22 @@
+// =========================================
+// BASE / RESET
+// =========================================
+@use "../abstracts" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Loop (@each) untuk generate CSS custom properties
+// dari map $colors di abstracts/_variables.scss
+:root {
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
+}

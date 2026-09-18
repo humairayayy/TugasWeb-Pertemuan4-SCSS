@@ -1,0 +1,47 @@
+// =========================================
+// ABSTRACTS / MIXINS
+// Kumpulan mixin reusable (minimal 3, di sini ada 5)
+// =========================================
+
+@use "variables" as v;
+
+// 1. Mixin transition generik
+@mixin transition($property: all, $duration: v.$transition-speed) {
+  transition: $property $duration;
+}
+
+// 2. Mixin shadow + hover shadow (dipakai di section/aside card)
+@mixin hover-shadow($resting, $hover) {
+  box-shadow: $resting;
+
+  &:hover {
+    box-shadow: $hover;
+  }
+}
+
+// 3. Mixin media query breakpoint (mobile-first sederhana)
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: v.$breakpoint-mobile) {
+      @content;
+    }
+  }
+}
+
+// 4. Mixin badge/pill (dipakai untuk list skill)
+@mixin pill-badge($bg, $color, $padding-y: 10px, $padding-x: 18px) {
+  display: inline-block;
+  background: $bg;
+  color: $color;
+  padding: $padding-y $padding-x;
+  margin: 5px;
+  border-radius: v.$radius-pill;
+}
+
+// 5. Mixin flex center (utility layout)
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}

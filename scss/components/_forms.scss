@@ -1,0 +1,40 @@
+// =========================================
+// COMPONENTS / FORMS
+// =========================================
+@use "../abstracts" as *;
+
+form {
+  margin-top: $spacing-md;
+
+  p {
+    margin-bottom: 18px;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: $color-nav-text;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid $color-input-border;
+  border-radius: $radius-sm;
+  font-family: $font-main;
+  font-size: $font-size-base;
+  background: $color-input-bg;
+
+  &:focus {
+    outline: none;
+    border-color: $color-input-focus;
+    box-shadow: 0 0 0 3px $color-input-focus-shadow;
+  }
+}
+
+textarea {
+  resize: vertical;
+}

@@ -1,0 +1,79 @@
+// =========================================
+// ABSTRACTS / VARIABLES
+// Semua nilai mentah (colors, spacing, font)
+// dikumpulkan di sini agar konsisten & mudah diubah.
+// =========================================
+
+// ---- Colors ----
+$color-bg: #f3f6fa;
+$color-text: #263238;
+
+$color-primary-dark: #1e3a5f;   // header title, h2, footer bg
+$color-primary: #385b7a;        // button bg
+$color-primary-darker: #27445e; // button hover
+$color-secondary: #526477;      // header paragraph
+$color-h3: #486581;
+
+$color-nav-text: #34495e;
+$color-nav-hover: #4f73a1;
+
+$color-border-light: #dbeafe;
+$color-bg-light: #eef2ff;
+$color-white: #fff;
+
+$color-shadow: rgba(0, 0, 0, 0.06);
+$color-shadow-hover: rgba(0, 0, 0, 0.09);
+
+$color-skill-bg: #e8f1fb;
+$color-skill-text: #345a7d;
+
+$color-edu-border: #9bbce0;
+$color-edu-bg: #f8fafc;
+
+$color-hobi-bg: #f1f5f9;
+$color-hobi-hover: #e2e8f0;
+
+$color-input-border: #ccd6e0;
+$color-input-focus: #789bc2;
+$color-input-focus-shadow: #e5effa;
+$color-input-bg: #fafcff;
+
+$color-caption: #718096;
+
+// Map warna khusus untuk di-loop (dipakai di base/_reset.scss dengan @each)
+$colors: (
+  "bg": $color-bg,
+  "text": $color-text,
+  "primary": $color-primary,
+  "primary-dark": $color-primary-dark,
+  "border-light": $color-border-light,
+);
+
+// ---- Spacing ----
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 40px;
+$spacing-xxl: 80px;
+
+// ---- Typography ----
+$font-main: Arial, Helvetica, sans-serif;
+$font-size-base: 15px;
+$font-size-h1: 48px;
+$font-size-h1-mobile: 36px;
+$font-size-h2: 28px;
+$font-size-h2-mobile: 24px;
+$font-size-p: 18px;
+
+// ---- Breakpoints ----
+$breakpoint-mobile: 600px;
+
+// ---- Border radius ----
+$radius-sm: 8px;
+$radius-md: 15px;
+$radius-pill: 20px;
+$radius-circle: 50%;
+
+// ---- Misc ----
+$transition-speed: 0.3s;
